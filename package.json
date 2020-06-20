@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "jekyll-serve": "bundle exec jekyll serve --incremental --trace",
-    "live-reload": "browser-sync start --proxy 'http://127.0.0.1:4000' --files '_site/*.html' --files '_site/*.css' --files '_site/*.js' --reloadDelay '2000'",
+    "live-reload": "browser-sync start --proxy 'http://127.0.0.1:4000' --files '_site/**/*.html, _site/**/*.css, _site/**/*.js' --reloadDelay '2000'",
     "start": "run-p jekyll-serve live-reload"
   },
   "repository": {
